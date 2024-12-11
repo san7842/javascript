@@ -94,6 +94,32 @@ function start(){
 //console.log(num)
 //a=+1;
 
+//  window.alert("thanks for visiting")
+//  sid=window.confirm("are you sure?")
+// console.log(sid);
+// let ans=window.prompt("enter your name")
+// console.log(ans);
 
+// let ans=confirm("Do your like my website")
+// if(ans=true){
+//   alert("thanks for visiting")
+// }
+// else{
+//   alert("sorry to hear that")
+// }
+//ternaay
+//condition?"On true":"On false"
+// let a=18;
+// //a>=18?alert("you can vote"):
+// alert("you cant vote")
+// let ans=a>=18?"can vote":"cant vote";
+// alert(ans)
+// let a=16;
+// if(a%2==0){
+//   alert("this is even")
+// }
+// else{
+//   alert("this is Odd")
+// }
 }
 start(); 
