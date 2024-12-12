@@ -21,9 +21,32 @@ function arr(){
 // document.write(ans)
 // let ans2=arr1.reverse()
 // document.write(ans2)
-let arr3=[3,5,6,8,4,2]
-let ans=arr3.sort()
-let ans1=ans.reverse()
-document.write(ans1)
+// let arr3=[3,5,6,8,4,2]
+// let ans=arr3.sort()
+// let ans1=ans.reverse()
+// document.write(ans1)
+let arr1=[3,5,2,4,9,7,8,6]
+// let ans=arr1.slice(0,-1)
+// document.write(ans)
 
-arr()
+// arr1.splice(2,2,25,35)
+// document.write(arr1)
+
+// let ans=arr1.map(function(num){//return array
+//     return num*2;
+// })
+//console.log(ans)
+// let ans=arr1.filter(function(num){//return array
+//     return num%2==0;
+// })
+
+// console.log(ans)
+// let ans=arr1.forEach(function(num){//string return
+//     console.log(num*2);
+// })
+
+for(let i of arr1){//string return
+    console.log(i)
+}
+}
+//arr()
