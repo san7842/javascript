@@ -1,4 +1,4 @@
-function arr(){
+//function arr(){
  //let Fruits=["apple","mango","Bananna","Grapes"] 
 // Fruits.pop();
 // document.write(Fruits)
@@ -25,7 +25,7 @@ function arr(){
 // let ans=arr3.sort()
 // let ans1=ans.reverse()
 // document.write(ans1)
-let arr1=[3,5,2,4,9,7,8,6]
+//let arr1=[3,5,2,4,9,7,8,6]
 // let ans=arr1.slice(0,-1)
 // document.write(ans)
 
@@ -45,8 +45,32 @@ let arr1=[3,5,2,4,9,7,8,6]
 //     console.log(num*2);
 // })
 
-for(let i of arr1){//string return
-    console.log(i)
-}
-}
+//for(let i of arr1){//string return
+ //   console.log(i)
+//}
+//}
 //arr()
+//let num=()=>{
+//let arr=[2,4,3,5,6,8,7]
+// let ans=arr.map((num)=>
+// {
+//     return num*2
+// })
+// //let ans1=arr.map((num)=>num*2)
+// //console.log(ans1);
+// let ans2=arr.filter((num)=>{
+//     return num*2;
+// })
+// let ans=arr.sort((a,b)=>b-a)
+// console.log(ans);
+// let ans=arr.sort((a,b)=>b-a)
+// ans.reverse
+// console.log(ans);
+
+//}
+//num()
+
+let go=(a,b)=>{
+console.log(a+b);
+}
+go(5)
