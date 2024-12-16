@@ -70,7 +70,64 @@
 //}
 //num()
 
-let go=(a,b)=>{
-console.log(a+b);
+// let go=(a,b)=>{
+// console.log(a+b);
+// }
+// go(5)
+// function san(){
+//     // //let a=17;
+//     // let ans =a>=18?"can vote":"cant vote";
+//     // alert(ans)
+
+//    // let ask=prompt("your name")
+//     //alert("hello  "+   ask)
+
+//     // let ask=confirm("Do you like javascript?")
+//     // if(ask==1){
+//     //     alert("That's great!")
+//     // }
+//     // else{
+//     //     alert("No warrriers, keep Learning")
+//     // }
+
+//     // let str="javaScript is easy. I love javaScript!   "
+//     // let str2=str.replaceAll("javaScript","coding")
+//     // document.write(str)
+//     // document.write(str2)
+
+// //  let num=10;
+// //  for(var i=1; i<=10;++i)
+// //     document.write(i," ");
+
+// // let ask=prompt("enter 3 fruits")
+// // let ask1=prompt("enter 3 fruits")
+// // let ask2=prompt("enter 3 fruits")
+
+// // document.write()
+//  let arr=[10,20,30,40,50];
+//  for(var)
+
+
+// }
+// //san()
+let num=()=>{
+// let arr1=[1,2,3,4,5,6]
+// let ans=arr1.map(function(key){
+//     return key*2;
+// })
+//let ans1=arr1.map((key)=>{
+ //   return key*2;
+//})
+let arr=[1,2,3,4,5,6]
+// arr.map(function(okk){
+//     return okk+2;
+// })
+// console.log(arr);
+// let arr1=[11,12,13,14,15]
+// arr.map(()=>{
+// return
+// })
+let sum=arr.map((pkk)=>pkk*2)
+console.log(sum);
 }
-go(5)
+//num()
