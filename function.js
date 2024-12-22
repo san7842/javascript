@@ -8,19 +8,19 @@ function san(){
 // console.log(a)//redeclare is allowed in var
 // let a=5;
 // let a=10;
-// console.log(a)//redeclare is not allowed in var
+// console.log(a)//redeclare is not allowed in let
 // const a=5;
 // const a=10;
-// console.log(a)//redeclare is not allowed in var
+// console.log(a)//redeclare is not allowed in const
 // var a=5;
 //  a=10;
 // console.log(a)//reassingment is allowed in var
 // let a=5;
 //  a=10;
-// console.log(a)//reassignmentis  allowed in var
+// console.log(a)//reassignmentis  allowed in let
 // const a=5;
 // a=10;
-// console.log(a)//reassignment is not allowed in var
+// console.log(a)//reassignment is not allowed in const
 console.log(a)
 var a=7;
 console.log(a)
