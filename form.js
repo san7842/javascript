@@ -7,8 +7,8 @@ let sub =()=>{
     let cpass = document.querySelector("#cpass").value;
 
     let  errname= document.querySelector("#errname");
-    let errmail= document.querySelector("#errnumber");
-    let errno= document.querySelector("#erremail");
+    let errnum= document.querySelector("#errnumber");
+    let errmno= document.querySelector("#erremail");
     let errpass = document.querySelector("#errpass");
     let  errconfirm = document.querySelector("#errcpass");
       
@@ -18,14 +18,14 @@ let sub =()=>{
               errname.style.color="red";
               return false;
           }
-        if(mno===""){
-            errno.innerHTML="enter your no ";
-            errno.style.color="red";
+        if(num===""){
+            errnum.innerHTML="enter your no ";
+            errnumstyle.color="red";
             return false;
                 }
-        if(num===""){
-             errmail.innerHTML="enter your email";
-             errmail.style.color="red";
+        if(mno===""){
+             errmno.innerHTML="enter your email";
+             errmno.style.color="red";
             return false;
              }
         if(pass===""){
@@ -38,4 +38,33 @@ let sub =()=>{
          errconfirm.style.color="red";
             return false;
                         }
+                        // ================number============
+             else if(isNaN(num)) {
+                errnum.innerHTML="enter your  vailid no ";
+                errnum.style.color="red";
+                return false;
+                    }
+                    else if(num.length!=10){
+                        errnum.innerHTML="please enter 10 digit"
+                        return false;
+                    }
+                    else if(!(mno.includes('@')&& email .includes('.com'))){
+                        errmno.innerHTML="please enter vailid email"
+                        return false;
+                    }
+                    else if(pass!=cpass){
+                        errconfirm.innerHTML="password not match"
+                        return false;
+                    }
+                    else if(!( 
+                        pass.match(/[1234567890]/) &&
+                        pass.match(/[!@#$%^&*()]/)&&
+                        pass.match(/[a-z]/) &&
+                        pass.match(/[A-Z]/)
+                    )){
+                        errconfirm.innerHTML="password should have at least one upper alph synbol digit"
+                        return false;
+                    }
+                       
 }
+// == focus()    placeholder  // value empty
