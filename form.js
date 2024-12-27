@@ -6,16 +6,23 @@ let sub =()=>{
     let pass = document.querySelector("#pass").value;
     let cpass = document.querySelector("#cpass").value;
 
+    // let nam = document.querySelector("#name").focus();
+    // let nu = document.querySelector("#number").focus();
+    // let mn = document.querySelector("#email").focus();
+    // let pas= document.querySelector("#pass").focus();
+    //  let cpas = document.querySelector("#cpass").focus();
+
     let  errname= document.querySelector("#errname");
     let errnum= document.querySelector("#errnumber");
     let errmno= document.querySelector("#erremail");
     let errpass = document.querySelector("#errpass");
-    let  errconfirm = document.querySelector("#errcpass");
+    let  errcpass = document.querySelector("#errcpass");
       
       
         if(name===""){
               errname.innerHTML="enter your name ";
               errname.style.color="red";
+              document.querySelector("#name").placeholder="enter your name"
               return false;
           }
         if(num===""){
@@ -34,14 +41,17 @@ let sub =()=>{
             return false;
                         }
         if(cpass===""){
-         errconfirm.innerHTML="enter your cpass";
-         errconfirm.style.color="red";
+         errcpass.innerHTML="enter your cpass";
+         errcpass.style.color="red";
             return false;
                         }
                         // ================number============
              else if(isNaN(num)) {
                 errnum.innerHTML="enter your  vailid no ";
                 errnum.style.color="red";
+                // errnum.value = ""; 
+                // errnum.placeholder = "Type something..."; 
+                // errnum.focus();
                 return false;
                     }
                     else if(num.length!=10){
@@ -54,6 +64,7 @@ let sub =()=>{
                     }
                     else if(pass!=cpass){
                         errconfirm.innerHTML="password not match"
+                        document.querySelector("#cpass").value="";
                         return false;
                     }
                     else if(!( 
@@ -62,9 +73,11 @@ let sub =()=>{
                         pass.match(/[a-z]/) &&
                         pass.match(/[A-Z]/)
                     )){
-                        errconfirm.innerHTML="password should have at least one upper alph synbol digit"
+                        errcpass.innerHTML="password should have at least one upper alph synbol digit"
                         return false;
                     }
+                    
                        
 }
-// == focus()    placeholder  // value empty
+//== focus()    placeholder  // value empty
+

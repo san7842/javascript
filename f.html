@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Input with Focus, Empty Value, and Placeholder</title>
+</head>
+<body>
+  <h1>Text Input with Focus, Empty Value, and Placeholder</h1>
+  <input type="text" id="textInput" placeholder="Type something..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Type something...'">
+  <button onclick="storeText()">Submit</button>
+  <p id="output"></p>
+
+  <script>
+    const storeText = () => {
+      const input = document.getElementById("textInput");
+      const text = input.value.trim();
+
+      if (text === "") {
+        alert("Please enter some text.");
+        input.focus();
+        return;
+      }
+
+      document.getElementById("output").innerText = text;
+      input.value = ""; // Clear the input field after storing the text
+      input.placeholder = "Type something..."; // Restore placeholder
+      input.focus(); // Set focus back to the input field
+    }
+
+    // Set focus on the input field when the page loads
+    window.onload = () => {
+      document.getElementById("textInput").focus();
+    }
+  </script>
+</body>
+</html>
