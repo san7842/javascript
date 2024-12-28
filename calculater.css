@@ -1,0 +1,52 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+#display{
+    background-color: rgb(228, 213, 213);
+    height:25px;
+   
+}
+/* #tabl {
+    /* align-items: center; 
+    justify-content: center; 
+    
+    
+}
+ */
+.tabl{
+    display: flex;
+    justify-content: center; 
+    margin-top: 50px;
+
+}
+#tabl tr td{
+margin: 20px;
+padding: 10px;
+border-radius: 9px;
+}
+#tabl tr td:hover{
+    background-color: rgb(43, 43, 176);
+}
+.td {
+    font-size: 20px;
+    color: black;
+    background: yellow;
+}
+.td1 {
+    color: white;
+    background: rgba(14, 14, 14, 0.847);
+}
+.del{
+    color: white;
+    background-color: rgb(216, 26, 26);
+}
+ .equ{ /*font-size: 25px; */
+    text-align: center;
+    background-color: yellow;
+}
+.squ{
+    text-align: center;
+   color: white;
+   background-color: rgb(214, 24, 24);
+}
