@@ -1,0 +1,22 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+#tabl{
+    width:120px;
+    height: 140px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#display{
+    width:85px ;
+    height: 30px;
+
+}
+.td{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./cal.css" rel="stylesheet">
+</head>
+<body>
+   <table border="1" id="tabl">
+    <tr>
+        <td id="display" colspan="4"></td>
+    </tr>
+    <tr class="td">
+        <td onclick="AC('')">AC</td>
+        <td onclick="DEL('')">DEL</td>
+        <td onclick="pressed('%')">%</td>
+        <td id="td1" onclick="pressed('/')">/</td>
+    </tr>
+    <tr class="td">
+        <td onclick="pressed('7')">7</td>
+        <td onclick="pressed('8')">8</td>
+        <td onclick="pressed('9')">9</td>
+        <td onclick="pressed('*')">x</td>
+    </tr>
+    <tr class="td">
+        <td onclick="pressed('4')">4</td>
+        <td onclick="pressed('5')">5</td>
+        <td onclick="pressed('6')">6</td>
+        <td onclick="pressed('-')">-</td>
+    </tr>
+    <tr class="td">
+        <td onclick="pressed('1')">1</td>
+        <td onclick="pressed('2')">2</td>
+        <td onclick="pressed('3')">3</td>
+        <td onclick="pressed('+')">+</td>
+    </tr>
+    <tr class="td">
+        <td onclick="pressed('00')">00</td>
+        <td onclick="pressed('0')">0</td>
+        <td onclick="pressed('.')">.</td>
+        <td onclick="equll('=')">=</td>
+    </tr>
+
+    
+
+   </table>
+
+    <script src="./cal.js" ></script>
+</body>
+</html>
