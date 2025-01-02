@@ -5,8 +5,9 @@ let pressed=(value)=>{
     show.innerHTML=store;
 
 }
-let equall=()=>{
+let equll=()=>{
     let show=document.querySelector("#display")
+    show.innerHTML=eval(store);
     store=eval(store);
     store=toString();
 } 
