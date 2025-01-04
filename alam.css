@@ -1,0 +1,25 @@
+/* *{
+    padding :0px;
+    margin:0px;
+
+}
+#inp{
+    margin: ;
+    width:200px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    border: 2px solid black;
+    border-radius: 60px;
+    background-color: aqua;
+}
+#butt{
+    margin: 20px 30px;
+    padding: 10px;
+    color: blue;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+} */

@@ -35,29 +35,29 @@
 
 
 // }
-// setInterval(()=>{
-//     let show=document.querySelector("#display")
-//     let time=new Date();
-//     show.innerHTML=`${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`
-// },1000)
-let alaram=()=>{
+setInterval(()=>{
     let show=document.querySelector("#display")
-    let inp=document.querySelector("#inp" ).value ;
-  let inter=  setInterval(()=>{
-        let time=new Date();
-        let alaramtime=`${time.getHours().toString().padStart(2,"0")}:${time.getMinutes.toString().padStart(2,"0")}` 
+    let time=new Date();
+    show.innerHTML=`${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`
+},1000)
+// let alaram=()=>{
+//     let show=document.querySelector("#display")
+//     let inp=document.querySelector("#inp" ).value ;
+//   let inter= setInterval(()=>{
+//         let time=new Date()
+//         let alaramtime=`${time.getHours().toString().padStart(2,"0")}:${time.getMinutes.toString().padStart(2,"0")}` 
 
-        if(alaramtime==inp){
-            show.innerHTML="alarm  is ringing"
-            document.querySelector("#aud").paly()
+//         if(alaramtime==inp){
+//             show.innerHTML="Alarm  is ringing"
+//             document.querySelector("#aud").paly()
 
-            setTimeout(()=>{
-                document.querySelector("#aud").pause()
-                clearInterval(inter)
-            },7000)
-        }
-        else{
-            show.innerHTML="Alaram set"
-        }
-    })
-}
+//             setTimeout(()=>{
+//                 document.querySelector("#aud").pause()
+//                 clearInterval(inter)
+//             },7000)
+//         }
+//         else{
+//             show.innerHTML="Alaram set"
+//         }
+//     },1000)
+// }

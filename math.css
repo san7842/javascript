@@ -1,0 +1,151 @@
+#box1{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:blanchedalmond ;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+     opacity: 0;
+
+}
+
+#box1 div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: blue;
+}
+#box2{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:blanchedalmond ;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+     opacity: 0;
+
+}
+
+#box2 div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: blue;
+   
+}
+#box3{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:blanchedalmond ;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+     opacity: 0;
+
+}
+
+#box3 div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: blue;
+    
+}
+#box4{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:blanchedalmond ;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display:grid ;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+     /* opacity: 0; */
+
+}
+
+#box4 div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: blue;
+    
+}
+#box5{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:blanchedalmond ;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+     opacity: 0;
+
+}
+
+#box5 div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: blue;
+    
+}
+#box6{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color:blanchedalmond ;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+     opacity: 0;
+
+}
+
+#box6 div{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: blue;
+    
+}

@@ -24,24 +24,24 @@
 //     box.style.backgroundImage='url(https://th.bing.com/th/id/OIP.LsSx6kxsbQWlMRJ8S15lkQHaE8?w=269&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7)'
 // }
 // ===============increament and decreament======
-// let count=0;
-// let inc=()=>{
-// let text=document.querySelector("#show")
-// count++;
-// text.innerHTML=count;
-// }
-// let dec=()=>{
-// let text=document.querySelector("#show");
-// if (count > 0) 
-//     count--;
-//     text.innerHTML=count;
+let count=0;
+let inc=()=>{
+let text=document.querySelector("#show")
+count++;
+text.innerHTML=count;
+}
+let dec=()=>{
+let text=document.querySelector("#show");
+if (count > 0) 
+    count--;
+    text.innerHTML=count;
  
-// }
-// let res=()=>{
-//     let text=document.querySelector("#show");
-//     count=0;
-//     text.innerHTML=count;
-// }
+}
+let res=()=>{
+    let text=document.querySelector("#show");
+    count=0;
+    text.innerHTML=count;
+}
 //
 // let re=()=>{
 //         let box1=document.querySelector("#box");
