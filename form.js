@@ -58,7 +58,7 @@ let sub =()=>{
                         errnum.innerHTML="please enter 10 digit"
                         return false;
                     }
-                    else if(!(mno.includes('@')&& email .includes('.com'))){
+                    else if(!(mno.includes('@')&& mno .includes('.com'))){
                         errmno.innerHTML="please enter vailid email"
                         return false;
                     }
