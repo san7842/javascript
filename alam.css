@@ -1,12 +1,20 @@
-/* *{
+*{
     padding :0px;
     margin:0px;
 
 }
-#inp{
+body{
+    width:100vw;
+    height:100vh;
+    /* background: url()no-repeat;
+    background-position: center;
+    background-size: cover; */
+    /* display:flex;
+    align-items: center;
+    justify-content: center;
     margin: ;
     width:200px;
-    height:100px;
+    height:100px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +23,18 @@
     border-radius: 60px;
     background-color: aqua;
 }
+#inp{
+    /* margin: ;
+    width:200px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    border: 2px solid black;
+    border-radius: 60px;
+    background-color: aqua; */
+}
 #butt{
     margin: 20px 30px;
     padding: 10px;
@@ -22,4 +42,4 @@
     background-color: white;
     justify-content: center;
     align-items: center;
-} */
+}
