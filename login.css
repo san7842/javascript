@@ -7,9 +7,9 @@ font-family: sans-serif;
  body{
     width:100vw;
     height:100vh;
-    /* background: url()no-repeat;
+    background: url(https://static.vecteezy.com/system/resources/previews/010/008/086/non_2x/background-dimension-3d-graphic-message-board-for-text-and-message-design-line-shadow-for-modern-web-design-free-vector.jpg)no-repeat;
     background-position: center;
-    background-size: cover; */
+    background-size: cover;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -17,12 +17,13 @@ font-family: sans-serif;
  }
  .login{
     width:400px;
-    height: 500px;
-    background-color:rgba(0,0,0,0.5);
+    height: 720px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* rgba(188, 37, 37, 0.5 */
     backdrop-filter: blur(10px);
     border-radius: 40px;
     border: 3px solid rgba(255, 255 ,255, 0.3);
-  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -49,7 +50,7 @@ h2{
     outline:none;
 
     font-size: 1.2em;
-    color: white;
+    color: rgb(213, 201, 201);
     padding:0 30px 0 10px;
 }
 .form label{
@@ -58,21 +59,21 @@ h2{
     left:10px;
     transform: translateY(-50%);
     font-size: 1.2em;
-    color:white;
+    color:rgb(220, 213, 213);
     transition: 0.5s;
 }
 input:focus~label,
 input:valid~label{
     top:-5px;
 }
-.form i{
+/* .form i{
     position:absolute;
     top:50%;
     right:20px;
     transform: translateY(-50%);
     color:white;
     font-size: 1.2em;
-}
+} */
 p{
     text-align: center;
     color:white;

@@ -63,7 +63,7 @@ let sub =()=>{
                         return false;
                     }
                     else if(pass!=cpass){
-                        errconfirm.innerHTML="password not match"
+                        errcpass.innerHTML="password not match"
                         document.querySelector("#cpass").value="";
                         return false;
                     }
@@ -73,7 +73,7 @@ let sub =()=>{
                         pass.match(/[a-z]/) &&
                         pass.match(/[A-Z]/)
                     )){
-                        errcpass.innerHTML="password should have at least one upper alph synbol digit"
+                        errpass.innerHTML="password should have at least one upper alph synbol digit"
                         return false;
                     }
                     

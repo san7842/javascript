@@ -7,22 +7,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="login.css" rel="stylesheet">
+    <!-- <link href="login.css" rel="stylesheet"> -->
 </head>
 <body>
     <div class="login">
         <h2>Login</h2>
         <form action="">
-            <div class="form" id="email">
+            <div class="form" >
+                <s id="errname"></s>
+                <input type="text" id="name"  placeholder=" Enter your name" required >
+                <label for="">Name</label><i class="fa-solid fa-user"></i>
+
+            </div>
+            <div class="form" >
+                <s id="errnum"></s>
+                <input type="text" id="number" placeholder="enter your number" >
+                <label for=""> Phone Number</label><i class="fa-solid fa-phone"></i>
+
+            </div>
+            <div class="form" >
                 <s id="erremail"></s>
-            <input  type="email" required>
+            <input  type="text"  id="email"  placeholder="Enter your email">
             <label for="">Email</label><i class="fa-solid fa-envelope"></i>
 
         </div>
-        <div class="form"  id="pass">
+        <div class="form"  >
             <s id="errpass"></s>
-            <input  type="Password" required>
+            <input  type="text" id="pass" placeholder="Enter your password">
             <label for="">Password</label><i class="fa-solid fa-lock"></i>
+
+        </div>
+        <div class="form" >
+            <s id="errcpass"></s>
+            <input type="text" id="cpass" placeholder="Enter your confirm password" >
+            <label for="">Comfirm Password</label><i class="fa-solid fa-lock"></i>
 
         </div>
         <p><input type="checkbox">Remember Me<a href="#">Forget Password</a></p>
@@ -31,6 +49,6 @@
         </form>
 
     </div>
-    <script src="login.js"></script>
+    <script src="./login.js"></script>
 </body>
 </html>
