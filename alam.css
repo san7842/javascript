@@ -3,43 +3,73 @@
     margin:0px;
 
 }
-body{
-    width:100vw;
-    height:100vh;
-    /* background: url()no-repeat;
-    background-position: center;
-    background-size: cover; */
-    /* display:flex;
-    align-items: center;
-    justify-content: center;
-    margin: ;
-    width:200px;
-    height:100px; */
+body {
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: green;
-    border: 2px solid black;
-    border-radius: 60px;
-    background-color: aqua;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.alarm{
+   
+    text-align: center;
+}
+
+.clock {
+    width: 100%;
+    height: 160px;
+    background-color: #665151;
+    border: 5px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-color: #ff9a9e; }
+    25% { background-color: #4dad35; }
+    50% { background-color: #fad0c4; }
+    75% { background-color: #a71c7b; }
+    100% { background-color: #ff9a9e; }
+}
+
+.alarm {
+    
+    
+    animation: backgroundAnimation 4s linear infinite;
 }
 #inp{
-    /* margin: ;
-    width:200px;
-    height:100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: green;
-    border: 2px solid black;
-    border-radius: 60px;
-    background-color: aqua; */
+    width:100px;
+    margin:10px;
+    padding: 20px;
+    color: white;
+    background-color: rgb(197, 114, 114);
+
 }
-#butt{
-    margin: 20px 30px;
+/* #startAlarm{
+    margin:10px 10px;
     padding: 10px;
-    color: blue;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-}
+    background-color: green;
+    color: white;
+} */
+/* #stopAlarm{
+    margin:10px;
+    padding: 10px;
+    color: white;
+    background-color: red;
+}*/
+#butt{
+    margin:20px;
+    padding: 10px;
+    font-size: 20px;
+    font-style: normal;
+    color: black;
+    background-color: rgb(167, 167, 43);
+    
+} 

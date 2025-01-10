@@ -7,12 +7,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link href="login.css" rel="stylesheet"> -->
+    <link href="login.css" rel="stylesheet">
 </head>
 <body>
     <div class="login">
         <h2>Login</h2>
-        <form action="">
+        <div class="form">
+            <form>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <div class="error" id="errname">Please enter your name</div>
+    
+                <input type="tel" id="number" name="number" placeholder="Number" required>
+                <div class="error" id="errnumber">Please enter a valid number</div>
+    
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <div class="error" id="erremail">Please enter a valid email</div>
+    
+                <input type="password" id="pass" name="password" placeholder="Password" required>
+                <div class="error" id="errpass">Please enter a password</div>
+    
+                <input type="password" id="cpass" name="confirmPassword" placeholder="Confirm Password" required>
+                <div class="error" id="errcpass">Passwords do not match</div>
+    
+                <input type="submit" value="Login" onclick=" return submit()">
+           
+        
+        <!-- <form action="">
             <div class="form" >
                 <s id="errname"></s>
                 <input type="text" id="name"  placeholder=" Enter your name" required >
@@ -45,7 +65,7 @@
         </div>
         <p><input type="checkbox">Remember Me<a href="#">Forget Password</a></p>
         <input type="submit" id="btn" value="Login" onclick="return submit()">
-        <p>Don't have a account?<a href="#">Register</a></p>
+        <p>Don't have a account?<a href="#">Register</a></p> -->
         </form>
 
     </div>

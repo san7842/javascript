@@ -2,6 +2,7 @@
 // console.log(date.toLocaleString());
 // let ans1=date.getFullYear()
 // let ans2=date.getMonth()
+// console.log(ans2)
 // let ans3=date.getDay()
 // let ans4=date.getHours()
 // let ans5=date.getMinutes()
@@ -35,11 +36,11 @@
 
 
 // }
-// setInterval(()=>{
-//     let show=document.querySelector("#display")
-//     let time=new Date();
-//     show.innerHTML=`${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`
-// },1000)
+setInterval(()=>{
+    let show=document.querySelector("#display")
+    let time=new Date();
+    show.innerHTML=`${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`
+},1000)
 let alaram=()=>{
     let show=document.querySelector("#display")
     let inp=document.querySelector("#inp" ).value ;

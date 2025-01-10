@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .registration-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            margin: 0 0 20px 0;
+            text-align: center;
+            color: #333;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .error {
+            color: red;
+            font-size: 12px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Registration</h2>
+        <form id="registrationForm">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <div class="error" id="nameError">Please enter your name</div>
+
+            <input type="tel" id="number" name="number" placeholder="Number" required>
+            <div class="error" id="numberError">Please enter a valid number</div>
+
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <div class="error" id="emailError">Please enter a valid email</div>
+
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <div class="error" id="passwordError">Please enter a password</div>
+
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+            <div class="error" id="confirmPasswordError">Passwords do not match</div>
+
+            <button type="button" onclick="validateRegistration()">Register</button>
+        </form>
+    </div>
+
+    <script>
+        function validateRegistration() {
+            const name = document.getElementById('name').value;
+            const number = document.getElementById('number').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            let isValid = true;
+
+            // Name validation
+            if (!name) {
+                document.getElementById('nameError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('nameError').style.display = 'none';
+            }
+
+            // Number validation
+            const numberPattern = /^[0-9]{10}$/;
+            if (!number.match(numberPattern)) {
+                document.getElementById('numberError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('numberError').style.display = 'none';
+            }
+
+            // Email validation
+            const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+            if (!email.match(emailPattern)) {
+                document.getElementById('emailError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('emailError').style.display = 'none';
+            }
+
+            // Password validation
+            if (!password) {
+                document.getElementById('passwordError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('passwordError').style.display = 'none';
+            }
+
+            // Confirm Password validation
+            if (password !== confirmPassword) {
+                document.getElementById('confirmPasswordError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('confirmPasswordError').style.display = 'none';
+            }
+
+            if (isValid) {
+                alert('Registration successful!');
+                // Redirect to another page or perform other actions
+            }
+        }
+    </script>
+</body>
+</html>
