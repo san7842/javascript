@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,64 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
+        <form>
+
+            <input type="text" id="email">
+            <input type="text" id="pass">
+            <input type="submit" value="login" onclick="login()">
+        </form>
+    </div>
     
     <script src="./signup.js"></script>
 </body>
-</html>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+  
+        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+ 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <title>Document</title>
+</head>
+<body >
+    <form class="container" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="1000">
+        <h2>Login</h2>
+         
+        <!-- Name Field -->
+        <label for="name">Name</label>
+        <div class="input-container">
+            <i class="fas fa-user"></i> 
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+        
+      
+
+      
+        <label for="password">Password</label>
+        <div class="input-container">
+            <i class="fas fa-lock"></i> 
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        </div>
+        
+       
+
+     
+        <input type="submit" value="Login" onclick="return login()" id="btn">
+
+      
+        <p class="signup-link">Don't have an account? <a href="sign.html" id="signup-link">Signup</a></p>
+    </form>
+    
+    <script src="signup.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>       login wala
