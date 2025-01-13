@@ -44,16 +44,19 @@ let signup = () => {
     let signmobile = document.querySelector("#mobile").value;
     let signemail = document.querySelector("#email").value;
     let signpassword = document.querySelector("#password").value;
+    let signcpassword=document.querySelector("#cpass").value ;
 
     let errorname = document.querySelector("#name");
     let errormobile = document.querySelector("#mobile");
     let erroremail = document.querySelector("#email");
     let errorpassword = document.querySelector("#password");
+    let errcpass=document.querySelector("#errcpass")
 
     errorname.setAttribute("placeholder", "");
     errormobile.setAttribute("placeholder", "");
     erroremail.setAttribute("placeholder", "");
     errorpassword.setAttribute("placeholder", "");
+    errcpass.setAttribute("placeholder"," ");
 
    
     if (signname === "") {
@@ -108,12 +111,21 @@ let signup = () => {
         document.querySelector("#password").focus();
         return false;
     }
+    else if(signpassword!=signcpass){
+        errcpass.innerHTML="password not match"
+         errcpass.style.color="red"
+        document.querySelector("#cpasss").value="";
+       
+        return false;
+    }
+
 
   
     localStorage.setItem("name", signname);
     localStorage.setItem("mobile", signmobile);
     localStorage.setItem("email", signemail);
     localStorage.setItem("password", signpassword);
+    localStorage.setItem("cpass",signcpass);
 
    
     location.href = "signlog.html";
@@ -165,3 +177,10 @@ if (loginname === storedName && loginpassword === storedPassword) {
 }
 return false
 }
+
+let logout=()=> {
+    
+      document.getElementById('logout-button').style.display = 'none';
+       alert('Logged out successfully');
+    return false
+ }

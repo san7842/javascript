@@ -18,12 +18,12 @@
     <script src="./signup.js"></script>
 </body>
 </html> -->
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./sign.css">
   
         
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -32,12 +32,13 @@
     <title>Document</title>
 </head>
 <body >
-    <form class="container" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="1000">
+    <div class="login" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="1000">
+    <form class="containe" >
         <h2>Login</h2>
          
         <!-- Name Field -->
-        <label for="name">Name</label>
-        <div class="input-container">
+         <label for="name">Name</label>
+        <div class="login-container">
             <i class="fas fa-user"></i> 
             <input type="text" name="name" id="name" placeholder="Enter your name" required>
         </div>
@@ -46,7 +47,7 @@
 
       
         <label for="password">Password</label>
-        <div class="input-container">
+        <div class="login-container">
             <i class="fas fa-lock"></i> 
             <input type="password" name="password" id="password" placeholder="Enter your password" required>
         </div>
@@ -59,6 +60,7 @@
       
         <p class="signup-link">Don't have an account? <a href="sign.html" id="signup-link">Signup</a></p>
     </form>
+</div>
     
     <script src="signup.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -66,4 +68,4 @@
         AOS.init();
       </script>
 </body>
-</html>       login wala
+</html>       login wala 
