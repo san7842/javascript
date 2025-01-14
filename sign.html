@@ -32,20 +32,20 @@
         <!-- Email -->
          <label for="email">Email</label>
         <div class="input-container">
-            <i class="fas fa-envelope"></i>
-            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <!-- <i class="fas fa-envelope"></i> -->
+            <input type="text" name="email" id="email" placeholder="Enter your email" required>
         </div>
         <br> 
     
         <!-- Password -->
         <label for="password">Password</label>
         <div class="input-container">
-            <i class="fas fa-lock"></i>
+            <!-- <i class="fas fa-lock"></i> -->
             <input type="password" name="password" id="password" placeholder="Enter your password" required>
         </div>
         <br>
         <label for="cpass">cpassword</label>
-        <i class="fas fa-lock"></i>
+        <!-- <i class="fas fa-lock"></i> -->
         <input type="text" id="cpass" name="confirmPassword" placeholder="Confirm Password" required>
                 <div class="error" id="errcpass"></div>
      
@@ -58,15 +58,15 @@
     
         <!-- Sign-Up Button -->
         <input type="submit" id="btn" value="Signup" onclick="return signup()" >
-        <div id="account"><a href="signlog.html"> i have an account</a></div> 
+        <div id="account"> i have an account <a href="signlog.html">Login</a></div> 
     </form> 
     </div>
 
-    
- <script src="signup.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+      </script> 
+ <script src="signup.js"></script>
+
 </body>
 </html>  

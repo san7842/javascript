@@ -4,24 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="./signhome.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
     
-    <button ><a href="./sign.html">Signup</a</button>
-       
-<header class="home">
-<ul>
+    
+    <!-- fade-top-down -->
+<header class="home" data-aos="zoom-out-down" data-aos-duration="3000" data-aos-delay="1000">
+    <ul>
+        <img src="./image-260nw-2504057815.jpg" alt="aeroplane" id="img">
+    </ul>
+<ul >
     <li>Home</li>
     <li>About</li>
     <li>Contact Us</li>
     <li>Ticket</li>
 </ul>
-               
+<ul>
+    <button ><a href="./sign.html">Signup</a</button>
+        <button onclick="logout()"  id="logout-button">Logout</button>
+       
+</ul>
+         
     </header>
+    <section class="home1" >
+        <div data-aos="zoom-out-up" data-aos-duration="3000" data-aos-delay="1000"><img src="https://store-images.s-microsoft.com/image/apps.14672.14170712394370548.6eccac1f-475e-4688-a672-14b05aa5f2c8.fa949f52-d954-473b-adb0-b45778150fa2" alt></div>
+        <div data-aos="zoom-out-up" data-aos-duration="3000" data-aos-delay="1000"><img src="https://tse4.mm.bing.net/th?id=OIP.8MWnn6l_WjpvN7udqDhzOgAAAA&w=474&h=316&rs=1&pid=ImgDetMain" alt></div>
+        <div><img src="" alt></div>
+        <div><img src="" alt></div>
+    </section>
+    <section class="booking" >
+    <form id="bookingForm" data-aos="zoom-out-up"data-aos-duration="3000" data-aos-delay="1000">
+        <!-- <label for="fullname"></label> -->
+        <input type="text" id="fullname" name="fullname"  placeholder=" Name"><br><br>
 
-    <button onclick="logout()"  id="logout-button">Logout</button>
+        <!-- <label for="email">Email:</label> -->
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- <label for="from">From:</label> -->
+        <input type="text" id="from" name="from" required><br><br>
+
+        <!-- <label for="to">To:</label> -->
+        <input type="text" id="to" name="to" required><br><br>
+
+        <!-- <label for="departure">Departure Date:</label> -->
+        <input type="date" id="departure" name="departure" required><br><br>
+
+        <!-- <label for="return">Return Date:</label> -->
+        <input type="date" id="return" name="return"><br><br>
+
+        <!-- <label for="class">Class:</label> -->
+        <select id="class" name="class">
+            <option value="economy">Economy</option>
+            <option value="business">Business</option>
+            <option value="first">First</option>
+        </select><br><br>
+
+        <input type="submit" value="Book Flight">
+    </form>
+
+    </section>
+    <section>
+     
+
+    </section>
    
-   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     
      <script src="signup.js"></script> 
 </body>

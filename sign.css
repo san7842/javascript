@@ -94,3 +94,10 @@ input[type="text"], input[type="text"], input[type="email"], input[type="passwor
     justify-content: center;
     flex-direction: column;
 }
+/* ======home======= */
+.signup-link a{
+
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
