@@ -41,16 +41,16 @@
 let signup = () => {
    
     let signname = document.querySelector("#name").value;
-    let signmobile = document.querySelector("#mobile").value;
+    let signmobile = document.querySelector("#number").value;
     let signemail = document.querySelector("#email").value;
     let signpassword = document.querySelector("#password").value;
     let signcpassword=document.querySelector("#cpass").value ;
 
-    let errorname = document.querySelector("#name");
-    let errormobile = document.querySelector("#mobile");
-    let erroremail = document.querySelector("#email");
-    let errorpassword = document.querySelector("#password");
-    let errcpass=document.querySelector("#errcpass")
+    let errorname = document.querySelector("#errname");
+    let errormobile = document.querySelector("#errnumber");
+    let erroremail = document.querySelector("#erremail");
+    let errorpassword = document.querySelector("#errpassword");
+    let errcpass=document.querySelector("#errcpassword")
 
     errorname.setAttribute("placeholder", "");
     errormobile.setAttribute("placeholder", "");
@@ -70,17 +70,17 @@ let signup = () => {
     if (isNaN(signmobile)) {
         errormobile.setAttribute("placeholder", "Please Enter a valid Mobile Number");
         errormobile.style.borderColor = "red";
-        document.querySelector("#mobile").focus();
+        document.querySelector("#number").focus();
         return false;
     } else if (signmobile === "") {
         errormobile.setAttribute("placeholder", "Please Enter your Mobile");
         errormobile.style.borderColor = "red";
-        document.querySelector("#mobile").focus();
+        document.querySelector("#number").focus();
         return false;
     } else if (signmobile.length !== 10) {
         errormobile.setAttribute("placeholder", "Please Enter 10 digit Mobile Number");
         errormobile.style.borderColor = "red";
-        document.querySelector("#mobile").focus();
+        document.querySelector("#number").focus();
         return false;
     }
 
@@ -111,21 +111,21 @@ let signup = () => {
         document.querySelector("#password").focus();
         return false;
     }
-    else if(signpassword!=signcpass){
-        errcpass.innerHTML="password not match"
-         errcpass.style.color="red"
-        document.querySelector("#cpasss").value="";
+    // else if(signpassword!=signcpassword){
+    //     errcpass.innerHTML="password not match"
+    //      errcpass.style.color="red"
+    //     document.querySelector("#cpasss").value="";
        
-        return false;
-    }
+    //     return false;
+    // }
 
 
   
     localStorage.setItem("name", signname);
-    localStorage.setItem("mobile", signmobile);
+    localStorage.setItem("number", signmobile);
     localStorage.setItem("email", signemail);
     localStorage.setItem("password", signpassword);
-    localStorage.setItem("cpass",signcpass);
+    // localStorage.setItem("cpass",signcpass);
 
    
     location.href = "signlog.html";
@@ -133,11 +133,11 @@ let signup = () => {
 }
 let login=()=>{
 
-    let loginname = document.querySelector("#name").value;
+    let loginname = document.querySelector("#email").value;
     let loginpassword = document.querySelector("#password").value;
 
-    let errornamelogin = document.querySelector("#name");
-    let errorpasswordlogin = document.querySelector("#password");
+    let errornamelogin = document.querySelector("#erremail");
+    let errorpasswordlogin = document.querySelector("#errpassword");
 
     errornamelogin.setAttribute("placeholder", "");
     errorpasswordlogin.setAttribute("placeholder", "");
@@ -165,7 +165,7 @@ let login=()=>{
     return false;
 }
 
-let storedName = localStorage.getItem("name");
+let storedName = localStorage.getItem("email");
 let storedPassword = localStorage.getItem("password");
 
 

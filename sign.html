@@ -5,60 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./sign.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
         <div class="form" data-aos="fade-down-right" data-aos-duration="3000" data-aos-delay="1000">
-    <form class="container" >
+    <form class="signup" >
         <h2> Sign-Up </h2>
-        
-        <!--Name -->
-         <label for="name">Name</label>
-        <div class="input-container">
-            <i class="fas fa-user"></i>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        <div class="inp">
+            <p id="errname">Name</p>
+            <input type="text"  id="name" placeholder="Enter Name" >
+            <i class="fa fa-user" aria-hidden="true"></i> 
         </div>
-        <br>
-    
-        <!-- Mobile -->
-        <label for="mobile">Mobile</label>
-        <div class="input-container">
-            <i class="fas fa-phone"></i>
-            <input type="text" name="mobile" id="mobile" placeholder="Enter your mobile number" required>
+        <div class="inp">
+            <p id="errnumber">Number</p>
+            <input type="text"  id="number" placeholder="Enter Number"> 
+            <i class="fa fa-phone" aria-hidden="true"></i>
         </div>
-        <br> 
-    
-        <!-- Email -->
-         <label for="email">Email</label>
-        <div class="input-container">
-            <!-- <i class="fas fa-envelope"></i> -->
-            <input type="text" name="email" id="email" placeholder="Enter your email" required>
+        <div class="inp">
+            <p id="erremail">Email</p>
+            <input type="text"  id="email" placeholder="Enter email"> 
+            <i class="fa fa-envelope" aria-hidden="true"></i>
         </div>
-        <br> 
-    
-        <!-- Password -->
-        <label for="password">Password</label>
-        <div class="input-container">
-            <!-- <i class="fas fa-lock"></i> -->
-            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        <div class="inp">
+            <p id="errpassword"> Password</p>
+            <input type="password"  id="password" placeholder="Enter password"> 
+            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
         </div>
-        <br>
-        <label for="cpass">cpassword</label>
-        <!-- <i class="fas fa-lock"></i> -->
-        <input type="text" id="cpass" name="confirmPassword" placeholder="Confirm Password" required>
-                <div class="error" id="errcpass"></div>
-     
-        <!-- Terms & Conditions -->
-         <div class="terms-container">
-            <input type="checkbox" id="terms" required>
-            <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+        <div class="inp">
+            <p id="errcpassword">Comfirm password</p>
+            <input type="password"  id="cpass" placeholder="Enter comfirm password">
+            <i class="fa fa-unlock-alt" aria-hidden="true"></i> 
         </div>
-        <br>
+       
     
         <!-- Sign-Up Button -->
         <input type="submit" id="btn" value="Signup" onclick="return signup()" >
-        <div id="account"> i have an account <a href="signlog.html">Login</a></div> 
+        <div id="account" > i have an account <a href="signlog.html">Login</a></div> 
     </form> 
     </div>
 

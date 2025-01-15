@@ -1,34 +1,11 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>
-        <form>
-
-            <input type="text" id="email">
-            <input type="text" id="pass">
-            <input type="submit" value="login" onclick="login()">
-        </form>
-    </div>
-    
-    <script src="./signup.js"></script>
-</body>
-</html> -->
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./sign.css">
-  
-        
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
- 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="./sign.css">   
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <title>Document</title>
 </head>
 <body >
@@ -36,29 +13,24 @@
     <form class="containe" >
         <h2>Login</h2>
          
-        <!-- Name Field -->
-         <label for="name">Name</label>
-        <div class="login-container">
-            <i class="fas fa-user"></i> 
-            <input type="text" name="name" id="name" placeholder="Enter your name" required>
-        </div>
-        
-      
+       <div class="inp">
+        <p id="erremail">Email</p>
+        <input type="email" id="email" placeholder=" Enter Email">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+       </div>
+       <div class="inp">
+        <p id="errpassword">Password</p> <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+        <input type="password" id="password" placeholder="Enter Password">
+       </div>
 
-      
-        <label for="password">Password</label>
-        <div class="login-container">
-            <i class="fas fa-lock"></i> 
-            <input type="password" name="password" id="password" placeholder="Enter your password" required>
-        </div>
-        
-       
-
-     
+     <div>
         <input type="submit" value="Login" onclick="return login()" id="btn">
-
+    </div>
+    <div class="p">
+        <p> Don't have an account <a href="./sign.html">Signup</a> </p>
+    </div>
       
-        <p class="signup-link">Don't have an account? <a href="sign.html" id="signup-link">Signup</a></p>
+
     </form>
 </div>
     
@@ -68,4 +40,4 @@
         AOS.init();
       </script>
 </body>
-</html>       login wala 
+</html>       
