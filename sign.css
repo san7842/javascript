@@ -13,14 +13,15 @@ body{
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background-color: rgb(46, 46, 145);
-    background-image: url();
+    background-color: rgb(200, 200, 214);
+    background-image: url(https://th.bing.com/th/id/OIP.29_eSI7zra9XQGYlMupksAHaEK?w=289&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+    background-size: cover;
 }
 
 .form{
     width:400px;
     height: 670px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(171, 161, 161, 0.5);
     backdrop-filter: blur(10px);
     border-radius: 40px;
     border: 3px solid rgba(141, 136, 136, 0.3);
@@ -36,14 +37,19 @@ h2 {
     color: white;
 }
 .inp {
-    width:100%;
-    height:40px;
-    margin-top: 20px;
+    width:300px;
+    height:60px;
+    margin-top: 25px;
+}
+.inp p{
+    margin: 5px 10px;
 }
 .inp input{
     width:100%;
-    height:30px;
+    height:40px;
     padding:10px;
+    border-radius: 10px;
+    /* box-shadow: -10px -5px rgb(226, 86, 10); */
 }
 #btn {
     width: 100%;
@@ -59,10 +65,15 @@ h2 {
 #btn:hover {
     background-color: #45a049;
 }
+#account{
+    margin: 5px;
+   margin-left:100px ;
+}
 #account a{
     text-decoration: none;
-    color: #f2f2f2;
+    color: #1a11bc;
     cursor:pointer;
+   
 }
 #account a:hover{
     text-decoration: underline;
@@ -73,7 +84,7 @@ h2 {
     
     width:400px;
     height: 550px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(126, 123, 123, 0.5);
     backdrop-filter: blur(10px);
     border-radius: 40px;
     border: 3px solid rgba(141, 136, 136, 0.3);
@@ -91,7 +102,10 @@ h2 {
     text-decoration: none;
 }
 .p{
-    margin:5px;
+   
+    margin:5px 20px;
+    padding:5px;
+    
 }
 .p a{
     text-decoration: none;
@@ -103,10 +117,12 @@ h2 {
 }
 i{
    position:absolute;
-   margin-top:13px ;
+   margin-top:17px;
    /* margin-left: 10px; */
-    right:110px;
+    right:80px;
     transform: translateY(-50%);
     color:black;
     font-size: 1.2em;
 }
+/* ========home====== */
+ 

@@ -1,43 +1,4 @@
-// let login=()=>{
 
-//     let loginemail=document.querySelector("#email").value
-//     let loginpass=document.querySelector("#pass").value
-
-//     let localemail=localStorage.getItem("email")
-//     let localpass=localStorage.getItem("pass")
-
-//     if(loginemail==localemail && loginpass==localpass){
-//         alert("Login success")
-//        location.href="signhome.html"
-// }
-// else{
-//     alert("Login failed")
-// }
-// return false;
-// }
-
-
-// let sign=()=>{
-//     let signname =document.querySelector("#name").value
-//     let signnum =document.querySelector("#number").value
-//     let signemail=document.querySelector("#email").value
-//     let signpass=document.querySelector("#pass").value
-//     let  signcpass=document.querySelector("#cpass").value
-
-//     if(signname==""){
-//         let err=document.querySelector("#name")
-//         err.computedStyleMap.boder="1px solid red"
-//         return false;
-//     }
-//     localStorage.setItem("name",signname)
-//     localStorage.setItem("number",signnum)
-//     localStorage.setItem("email",signemail)
-//     localStorage.setItem("pass",signpass)
-//     localStorage.setItem("cpass",signcpass)
-
-//     location.href="signlog.html"
-//     return false;
-// }
 let signup = () => {
    
     let signname = document.querySelector("#name").value;
@@ -130,7 +91,7 @@ let signup = () => {
    
     location.href = "signlog.html";
     return false; 
-}
+};
 let login=()=>{
 
     let loginname = document.querySelector("#email").value;
@@ -173,14 +134,34 @@ if (loginname === storedName && loginpassword === storedPassword) {
     alert("Login Successful");
     location.href = "signhome.html"; 
 } else {
-    alert("Login credentials do not match!");
+    alert("Login Fails");
 }
 return false
-}
+};
 
 let logout=()=> {
     
       document.getElementById('logout-button').style.display = 'none';
        alert('Logged out successfully');
     return false
- }
+ };
+
+ VANTA.FOG({
+    el:"#mainbox",
+    mouseControls:true,
+    touchControls:true,
+    gyroControls:false,
+    minHeight:300.00,
+    minWidth:500.00,
+    midtoneColor:0xae1400
+ });
+//  VAR typed=new Typed("#typing",{
+//     strings:["Frontend Developer","Sandeep Kumar sahu","Web Developer"],
+//     typeSpeed:80,
+//     startDelay:10,
+//     backSpeed:30,
+//     smartBackspace:true,
+//     backDelay:700,
+//     loop;true
+
+//  });

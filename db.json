@@ -1,0 +1,35 @@
+{
+
+"doctor":[
+
+{
+    "name":"Siddharth",
+    "age":25,
+    "number":6261437008,
+    "problem":"Cold",
+    "date":"25-01-2025",
+    "price":250
+},
+{
+"name":"Ashok sahu",
+    "age":29,
+    "number":708992,
+    "problem":"Cold",
+    "date":"25-01-2025",
+    "price":250
+
+
+},
+{
+"name":"sandeep",
+"age":"24"
+
+}
+
+
+
+]
+
+
+
+}

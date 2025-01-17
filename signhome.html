@@ -23,7 +23,7 @@
     <li>Ticket</li>
 </ul>
 <ul>
-    <button ><a href="./sign.html">Signup</a</button>
+    <!-- <button ><a href="./sign.html">Signup</a</button> -->
         <button onclick="logout()"  id="logout-button">Logout</button>
        
 </ul>
@@ -32,44 +32,141 @@
     <section class="home1" >
         <div data-aos="zoom-out-up" data-aos-duration="3000" data-aos-delay="1000"><img src="https://store-images.s-microsoft.com/image/apps.14672.14170712394370548.6eccac1f-475e-4688-a672-14b05aa5f2c8.fa949f52-d954-473b-adb0-b45778150fa2" alt></div>
         <div data-aos="zoom-out-up" data-aos-duration="3000" data-aos-delay="1000"><img src="https://tse4.mm.bing.net/th?id=OIP.8MWnn6l_WjpvN7udqDhzOgAAAA&w=474&h=316&rs=1&pid=ImgDetMain" alt></div>
-        <div><img src="" alt></div>
-        <div><img src="" alt></div>
+        <div data-aos="zoom-out-up" data-aos-duration="3000" data-aos-delay="1000"><img src="https://th.bing.com/th?id=OIP.f3Q8zH07RH6Q-HJ-2cP2FwHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt></div>
+        <div data-aos="zoom-out-up" data-aos-duration="3000" data-aos-delay="1000"><img src="https://th.bing.com/th?id=OIP.h1GQMrPySLLIbNy3a-H3CgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt></div>
     </section>
-    <section class="booking" >
+    <section class="booking ">
+        
     <form id="bookingForm" data-aos="zoom-out-up"data-aos-duration="3000" data-aos-delay="1000">
-        <!-- <label for="fullname"></label> -->
-        <input type="text" id="fullname" name="fullname"  placeholder=" Name"><br><br>
-
-        <!-- <label for="email">Email:</label> -->
-        <input type="email" id="email" name="email" required><br><br>
-
-        <!-- <label for="from">From:</label> -->
-        <input type="text" id="from" name="from" required><br><br>
-
-        <!-- <label for="to">To:</label> -->
-        <input type="text" id="to" name="to" required><br><br>
-
-        <!-- <label for="departure">Departure Date:</label> -->
-        <input type="date" id="departure" name="departure" required><br><br>
-
-        <!-- <label for="return">Return Date:</label> -->
-        <input type="date" id="return" name="return"><br><br>
-
-        <!-- <label for="class">Class:</label> -->
-        <select id="class" name="class">
-            <option value="economy">Economy</option>
-            <option value="business">Business</option>
-            <option value="first">First</option>
+        <h2>FLIGHT BOOK</h2>
+        <div class="in">
+        <p class="tag"> Name</p>
+        <input type="text" id="fullname"  placeholder="Enter Name"><br><br>
+       </div>
+       <div class="in">
+        <p class="tag"> Number</p> 
+    <input type="text" id="number" required placeholder=" Enter Number"><br><br>
+  </div>
+        <div class="in">
+            <p class="tag"> Email</p>
+        <input type="email" id="email" required placeholder="Enter Email"><br><br>
+      </div>
+       <div class="in">
+        <p class="tag"> From</p>
+        <input type="text" id="from" name="from" required placeholder="Destination"><br><br>
+    </div>
+       <div class="in">
+        <p class="tag"> To</p>
+        <input type="text" id="to" name="to" required placeholder="Destination"><br><br>
+    </div>
+        <div class="in-date">
+            <article>
+                <p class=""> Date</p>
+        <input type="date" id="departure"  required><br><br>
+            </article>
+          <article>
+            <p class="tag"> Return Date</p>
+            <input type="date" id="return" required><br><br>
+          </article>  
+        
+    </div>
+       <div class="in">
+        <p class="tag">Department</p>
+        <select id="class" name="class" class="dep">
+            <option >Economy</option>
+            <option >Business</option>
+            <option >First</option>
         </select><br><br>
+    </div>
+    <div class="submit">
+        <input type="submit"  value="BOOK FLIGHT" onclick="booksub()">
+    </div>
+</form>
 
-        <input type="submit" value="Book Flight">
-    </form>
-
-    </section>
+</section>
     <section>
-     
+        <div>
+     <div date-aos="fade-right"><img src="" alt=""></div>
+     <div date-aos="fade-left" ><img  ></div>
+    </div>
     <div id="typediv"> I am<h1 id="typing"></h1></div>
     </section>
+
+    <section class="mid">
+    <div><img> </div>
+    <div> <img></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+            
+       
+    </section>
+    <footer class="footer-content" id="CONTACT">
+        <div class="head1">
+        <h2>Contact Info</h2>
+        <span>ADDRESS
+          <P>123 sTREET NAME, CITY,US</P>
+        </span>
+        <span>PHONE 
+          <P>TOLL Free(123) 456-7890</P>
+        </span>
+        <span>EMAIL 
+          <p>mail@example.com</p>
+        </span>
+        <div>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      </div>
+      <div class="head">
+          <h2>Customer Service</h2>
+          <span>Contact us</span>
+          <span>Delivery Policy</span>
+          <span>Payment Policy</span>
+          <span>Electronic Invoice </span>
+          <span>Corporate Sale</span>
+          <span>Privacy Policy</span>
+          <span>Terms Use</span>
+          <span>Coookie Policy</span>
+        </div>
+    
+        <div class="head2">
+          <h2>About Us </h2>
+          <span>About Us</span>
+          <span>Our Store</span>
+          <span>Careers </span>
+          <span>Brands</span>
+        </div>
+    
+        <div class="head3">
+          <h2>Top 5FAQs</h2>
+          <span>Technical support contacts</span>
+          <span>How do I know the date of my delivery?</span>
+          <span>My product did not arrive?</span>
+          <span>What are the payment methods</span>
+          <span>Product availability?</span>
+         
+        </div>
+    
+       </div>
+    </footer>
+    <section class="bottom2">
+      <article>
+            <div> © Porto eCommerce. 2024. All Rights Reserved</div>
+      </article>
+      <article class="but2">
+          <diV><a href="#"><i class="fa fa-cc-visa" aria-hidden="true"></i></a></diV>
+          <diV><a href="#"><i class="fa fa-cc-paypal" aria-hidden="true"></i></a></diV>
+          <diV><a href="#"><i class="fa fa-cc-stripe" aria-hidden="true"></i></a></diV>
+          <diV><a href="#"> </a></diV>
+         
+         <div class="qodef-e-content"></div>
+      </article>
+      </section>
+      
+  
    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
