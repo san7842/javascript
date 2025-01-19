@@ -29,7 +29,7 @@ let insertt=()=>{
     let inpage=document.querySelector("#inpage").value;
     let inpnum=document.querySelector("#inpnum").value;
     let inpdate=document.querySelector("#inpdate").value;
-    let inp=document.querySelector("#inpprob").value;
+    let inpprob=document.querySelector("#inpprob").value;
     let url='http://localhost:3000/doctor'
     fetch(url,{
         method:"POST",
@@ -39,8 +39,16 @@ let insertt=()=>{
         body:JSON.stringify({
             name:inpname,
             age:inpage,
+            number:inpnum,
+            problem:inpprob,
+            date:inpdate,
+            price:250
+            
+
             
         })
     })
+ location.href="CRUD.html"
 
+ return false
 }
