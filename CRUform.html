@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="CRUD.css" rel="stylesheet">
 </head>
 <body>
-    <form>
+    <form class="formh">
         Enter Name<input type="text" id="inpname">
         Enter Age<input type="number" id="inpage">
         Enter Number<input type="number" id="inpnum">
@@ -17,8 +18,8 @@
             <option value="Accidental-case">Accidental-case</option>
             <option value="Cancer">Cancer</option>
         </select>
-        Enter date<input type="text" id="inpdate">
-       <input type="submit" value="Book"onclick="return insertt()">
+        Enter date<input type="date" id="inpdate">
+       <input type="submit" id="inser" value="Book"onclick="return insertt()">
     </form>
     <script src="CRUD.js"></script>
 </body>
