@@ -145,16 +145,26 @@ let logout=()=> {
        alert('Logged out successfully');
     return false
  };
+ VANTA.RINGS({
+    el: "#ring",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00
+  })
 
- VANTA.FOG({
-    el:"#mainbox",
-    mouseControls:true,
-    touchControls:true,
-    gyroControls:false,
-    minHeight:300.00,
-    minWidth:500.00,
-    midtoneColor:0xae1400
- });
+//  VANTA.FOG({
+//     el:"#mainbox",
+//     mouseControls:true,
+//     touchControls:true,
+//     gyroControls:false,
+//     minHeight:300.00,
+//     minWidth:500.00,
+//     midtoneColor:0xae1400
+//  });
 //  VAR typed=new Typed("#typing",{
 //     strings:["Frontend Developer","Sandeep Kumar sahu","Web Developer"],
 //     typeSpeed:80,
